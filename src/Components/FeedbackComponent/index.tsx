@@ -28,7 +28,7 @@ const Feedback: FunctionComponent = () => {
         padding: '10px 15px',
         margin: '10px 0px',
       }}>
-      <Typography variant="h3" sx={{
+      <Typography variant="h4" sx={{
         textAlign: 'left',
         fontStyle: 'italic',
         margin: '5px 0'

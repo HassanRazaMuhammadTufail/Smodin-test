@@ -20,7 +20,8 @@ const RatingCustom: FunctionComponent<Props> = ({ label, value, setValue }) => {
     >
       <Typography 
         sx={{
-          padding: '10px 10px'
+          padding: '10px 10px',
+          fontWeight: 'bold'
         }}
         >{label+ ": "}</Typography>
       <Rating
