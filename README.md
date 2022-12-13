@@ -5,9 +5,12 @@ In my task I needed to add feedback component on Sample Essay page, above Essay 
 It's the Sample Essay Page where I have added Feedback Component over Essay Component.
 
 ### [Feedback Component](/src/Components/FeedbackComponent/index.tsx)
-This component contains the content and logic of feedback component.
-This component have one custom component [Rating](/src/Components/RatingComponent/index.tsx) and further prebuilt MUI components.
-And there's the logic to check if user have given 5 stars to each rating i.e. Site and Essay, then this component will ask user to leave a review to us.
+This component contains the content and logic of feedback component. <br />
+This component have one custom component [Rating](/src/Components/RatingComponent/index.tsx) and further prebuilt MUI components. <br />
+And there's the logic to check if user have given 5 stars to each rating i.e. Site and Essay, then this component will ask user to leave a review to us. <br />
+  [onSubmit](/src/Components/FeedbackComponent/index.tsx#L12) function is checking if rating is 5 for site and essay, and updating state to show Leave us a review button replacing submit button. <br />
+
+  [onReviewSubmit](/src/Components/FeedbackComponent/index.tsx#L18) function is for showing thanks alert, and resetting states.
 So now we know where to change if anything comes up for feedback component.
 
 ### [Rating Component](/src/Components/RatingComponent/index.tsx)
