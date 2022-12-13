@@ -1,3 +1,18 @@
+## Message to the fellow developer
+In my task I needed to add feedback component on Sample Essay page, above Essay component. I have used MUI for UI components.
+
+### [App.tsx](/src/App.tsx)
+It's the Sample Essay Page where I have added Feedback Component over Essay Component.
+
+### [Feedback Component](/src/Components/FeedbackComponent/index.tsx)
+This component contains the content and logic of feedback component.
+This component have one custom component [Rating](/src/Components/RatingComponent/index.tsx) and further prebuilt MUI components.
+And there's the logic to check if user have given 5 stars to each rating i.e. Site and Essay, then this component will ask user to leave a review to us.
+So now we know where to change if anything comes up for feedback component.
+
+### [Rating Component](/src/Components/RatingComponent/index.tsx)
+This component is overbuilt on MUI Rating component, and is taking three props (label, value, and setValue), as we are updating feedback component state when Rating value is changed.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
