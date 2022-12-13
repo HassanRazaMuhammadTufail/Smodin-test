@@ -1,5 +1,16 @@
 .App {
   text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.App > .container {
+  margin: 5px auto;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(144deg, #c6ffdd9c, #fbd786b3, #f7797d73);
+  border-radius: 10px;
 }
 
 .App-logo {
