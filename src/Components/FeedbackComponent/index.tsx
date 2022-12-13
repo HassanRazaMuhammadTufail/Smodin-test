@@ -1,5 +1,5 @@
 import React,{ FunctionComponent } from "react";
-import { Box, Button } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import Rating from "../RatingComponent";
 
 const Feedback: FunctionComponent = () => {
@@ -28,12 +28,24 @@ const Feedback: FunctionComponent = () => {
         padding: '10px 15px',
         margin: '10px 0px',
       }}>
+      <Typography variant="h3" sx={{
+        textAlign: 'left',
+        fontStyle: 'italic',
+        margin: '5px 0'
+        }}>Feedback</Typography>
+      <hr />
+      <Box sx={{
+        padding: '10px 15px',
+        margin: '10px 0px',
+      }}>
+          
           <Rating label="Essay Rating" value={essayRating} setValue={setEssayRating} />
           <Rating label="Site Rating" value={siteRating} setValue={setSiteRating} />
-        <Button sx={{
-          textTransform: 'none',
-          float: 'right'
-        }} variant="contained"  fullWidth={false} onClick={submit ? onReviewSubmit : onSubmit} >{submit? "Leave us a review" : "Submit"}</Button>
+          <Button sx={{
+            textTransform: 'none',
+            float: 'right'
+          }} variant="contained"  fullWidth={false} onClick={submit ? onReviewSubmit : onSubmit} >{submit? "Leave us a review" : "Submit"}</Button>
+      </Box>
       </Box>
   )
 }
